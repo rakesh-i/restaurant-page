@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'cursive';
+    src: url('PlaywriteCU-Light.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('FiraSansCondensed-Light.ttf');
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+    
+}
+
+#logo{
+    font-family: 'cursive';
+    font-weight: 600;
+    font-size: 30px;
+
+}
+nav{
+    display: flex;
+    gap:10px;
+}
+
+nav>button{
+    border:none;
+    padding: 10px;
+    background: none;
+    font-size: 16px;
+    font-family: 'regular';
+    font-weight: 600;
+}
+
+#content{
+    margin-top: 110px;
+}
+
+
+#carousel{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    align-self: center;
+    height: auto;
+    width: 900px;
+
+}
+
+#info{
+    margin-top: 20px;
+    font-family: 'regular';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background: #000000;
+    align-items: center;
+    padding: 40px 120px;
+    text-align: center;
+    gap:20px;
+}
+#info>p{
+    margin: 0;
+}
+#learnMore{
+    font-family: 'regular';
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: none;
+    border: 2px solid #ffffff;
+}
+
+#cards{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 100px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#cards>img{
+    height: auto;
+    width: 400px;
+}
+
+#card-cont{
+    width: 400px;
+}
+
+#comp2head{
+    font-family: 'cursive';
+    border: 2px solid #000000;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#comp2cont{
+    font-family: 'regular';
+    border: 2px solid #000000;
+    font-size: 16px;
+    padding: 10px;
+}
