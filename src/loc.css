@@ -1,0 +1,21 @@
+#loc{
+    padding: 10px 200px;
+    display: flex;
+    justify-content: center;
+    gap:30px;   
+    text-align: center;
+}
+
+p{
+    margin: 0;
+}
+
+#lleft{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#address:nth-child(1){
+    color: #937127;
+}

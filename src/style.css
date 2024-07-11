@@ -53,6 +53,12 @@ nav>button{
     font-size: 16px;
     font-family: 'regular';
     font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav>button:hover{
+    background: #000000;
+    color: #ffffff;
 }
 
 #content{
@@ -88,6 +94,12 @@ img{
 #info>p{
     margin: 0;
 }
+
+#logo{
+    background:none;
+    border: none;
+}
+
 #learnMore{
     font-family: 'regular';
     font-weight: 600;
@@ -96,6 +108,10 @@ img{
     color: #ffffff;
     background: none;
     border: 2px solid #ffffff;
+}
+#learnMore:hover{
+    background-color: #FFFFFF;
+    color:#000000;
 }
 
 #cards{
@@ -142,7 +158,20 @@ img{
     gap:20px;
     letter-spacing: 4px;
     border: 2px solid #000000;
-    padding: 20px;
+    padding: 10px;
+}
+#footer>button{
+    padding: 10px;
+    letter-spacing: 4px;
+    background: none;
+    color: #000000;
+    border: none;
+}
+
+#footer>button:hover{
+    
+    background: #000000;
+    color: #ffffff;
 }
 
 #credits{

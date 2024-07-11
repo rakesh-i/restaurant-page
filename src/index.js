@@ -1,13 +1,14 @@
 import './style.css';
 import Img1 from './pizza.jpg'
 import Img2 from './image.png'
+import {locations} from './loc'
 
-function component0(){
+function header(){
     const header_container = document.createElement('div');
     header_container.className = 'container';
 
     const header = document.createElement('header');
-    const logo = document.createElement('div');
+    const logo = document.createElement('button');
 
     logo.id = 'logo';
     logo.textContent = 'Restaurent';
@@ -17,15 +18,19 @@ function component0(){
     const nav = document.createElement('nav');
 
     const locLink = document.createElement('button');
+    locLink.id = 'locLink';
     locLink.textContent = "Hours&Location";
 
     const menuLink = document.createElement('button');
+    menuLink.id = 'menuLink';
     menuLink.textContent = 'Menu';
 
     const aboutLink = document.createElement('button');
+    aboutLink.id = 'aboutLink';
     aboutLink.textContent = 'About';
 
     const galleryLink = document.createElement('button');
+    galleryLink.id = 'galleryLink';
     galleryLink.textContent = 'Gallery';
 
     nav.appendChild(locLink);
@@ -36,6 +41,7 @@ function component0(){
     header.appendChild(nav);
     header_container.appendChild(header);
     return header_container;
+    
 }
 
 function carousel(){
@@ -92,15 +98,15 @@ function footer(){
     const footer = document.createElement('div');
     footer.id = 'footer';
 
-    const loyalty = document.createElement('div');
+    const loyalty = document.createElement('button');
     loyalty.textContent = 'LOYALTY';
-    const press = document.createElement('div');
+    const press = document.createElement('button');
     press.textContent = 'PRESS';
-    const career = document.createElement('div');
+    const career = document.createElement('button');
     career.textContent = 'CAREER';
-    const giftcard = document.createElement('div');
+    const giftcard = document.createElement('button');
     giftcard.textContent = 'GIFT CARDS';
-    const contact = document.createElement('div');
+    const contact = document.createElement('button');
     contact.textContent = 'CONTACT';
 
     footer.appendChild(loyalty);
@@ -149,10 +155,45 @@ function credits(){
 }
 
 
-document.body.appendChild(component0());
+document.body.appendChild(header());
 const content = document.getElementById('content');
 content.appendChild(carousel());
 content.appendChild(component1());
 content.appendChild(component2());
 content.appendChild(footer());
 content.appendChild(credits());
+
+document.getElementById('logo').addEventListener('click', function(){
+    const content = document.getElementById('content');
+    content.appendChild(carousel());
+    content.appendChild(component1());
+    content.appendChild(component2());
+    content.appendChild(footer());
+    content.appendChild(credits());
+});
+
+document.getElementById('locLink').addEventListener('click', function(){
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+    content.appendChild(locations());
+    content.appendChild(footer());
+    content.appendChild(credits());
+    
+});
+
+document.getElementById('menuLink').addEventListener('click', function(){
+    const content = document.getElementById('content');
+    content.innerHTML = ''; 
+});
+
+document.getElementById('aboutLink').addEventListener('click', function(){
+    const content = document.getElementById('content');
+    content.innerHTML = ''; 
+});
+
+document.getElementById('galleryLink').addEventListener('click', function(){
+    const content = document.getElementById('content');
+    content.innerHTML = ''; 
+});
+
+
