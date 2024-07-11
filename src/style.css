@@ -129,3 +129,39 @@ img{
     font-size: 16px;
     padding: 10px;
 }
+
+#foot-cont{
+    padding: 10px;
+}
+
+#footer{
+    font-family: 'regular';
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    letter-spacing: 4px;
+    border: 2px solid #000000;
+    padding: 20px;
+}
+
+#credits{
+    padding:0px 20px 10px 20px;
+    font-size: 14px;
+    font-family: 'regular';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+#right{
+    display: flex;
+    gap: 20px;
+}

@@ -1,5 +1,6 @@
 import './style.css';
 import Img1 from './pizza.jpg'
+import Img2 from './image.png'
 
 function component0(){
     const header_container = document.createElement('div');
@@ -85,9 +86,73 @@ function component2(){
     return info;
 }
 
+function footer(){
+    const footcont = document.createElement('div');
+    footcont.id = 'foot-cont';
+    const footer = document.createElement('div');
+    footer.id = 'footer';
+
+    const loyalty = document.createElement('div');
+    loyalty.textContent = 'LOYALTY';
+    const press = document.createElement('div');
+    press.textContent = 'PRESS';
+    const career = document.createElement('div');
+    career.textContent = 'CAREER';
+    const giftcard = document.createElement('div');
+    giftcard.textContent = 'GIFT CARDS';
+    const contact = document.createElement('div');
+    contact.textContent = 'CONTACT';
+
+    footer.appendChild(loyalty);
+    footer.appendChild(press);
+    footer.appendChild(career);
+    footer.appendChild(giftcard);
+    footer.appendChild(contact);
+
+    footcont.appendChild(footer);
+
+    return footcont;
+}
+
+function credits(){
+    const cont = document.createElement('div');
+    cont.id = 'credits';
+
+    const github = document.createElement('div');
+    github.id = 'github';
+    const logo = document.createElement('div');
+    const img = new Image();
+    img.src = Img2; 
+    img.style.height = '20px';
+    img.style.width = '20px';
+    logo.appendChild(img);
+    github.appendChild(logo);
+    const link = document.createElement('a');
+    link.textContent = '@rakesh-i';
+    github.appendChild(link);
+    cont.appendChild(github);
+
+    const right = document.createElement('div');
+    right.id = 'right';
+
+    const privacy = document.createElement('div');
+    privacy.textContent = 'PRIVACY';
+    const acc = document.createElement('div');
+    acc.textContent = 'ACCESSIBILITY';
+
+    right.appendChild(privacy);
+    right.appendChild(acc);
+    
+    cont.appendChild(right);
+
+    return cont;
+}
+
 
 document.body.appendChild(component0());
 const content = document.getElementById('content');
 content.appendChild(carousel());
 content.appendChild(component1());
 content.appendChild(component2());
+content.appendChild(footer());
+content.appendChild(credits());
