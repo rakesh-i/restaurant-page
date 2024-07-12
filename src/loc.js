@@ -7,12 +7,13 @@ function locations(){
     const left = document.createElement('div');
     left.id = 'lleft';
     const lheader = document.createElement('div');
+    lheader.id = 'lheader';
     const lcontent = document.createElement('div');
+    lcontent.id = 'lcontent';
     lheader.textContent = 'Hours & Location';
 
     lcontent.innerHTML = `
-                <div id="address">
-                    <div>
+                    <div id="address">
                         <p>900 3rd St,</p>
                         <p>Alpharetta, GA 30009</p>
                         <p>(678) 722-8335</p>
@@ -35,16 +36,17 @@ function locations(){
                     
                     <div id="order">
                         <button>ORDER ONLINE</button>
-                    </div>
-                </div>`
+                    </div>`
     left.appendChild(lheader);
     left.appendChild(lcontent);
 
     const right = document.createElement('div');
-    right.id = 'lright';
+    right.id = 'rright';
     const rheader = document.createElement('div');
+    rheader.id = 'rheader';
     const rcontent = document.createElement('div');
-    rheader.textContent = 'about Restaurent';
+    rcontent.id = 'rcontent';
+    rheader.textContent = 'About Restaurent';
 
     rcontent.innerHTML = `
         <div id="about">
@@ -56,10 +58,10 @@ function locations(){
             </p>
             <div>
                 <p>FOLLOW US ON SOCIAL</p>
-                <div>
-                    facebook
-                    twitter
-                    instagram
+                <div id='sociallinks'>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                    <p>instagram</p>
                 </div> 
             </div>
         </div>

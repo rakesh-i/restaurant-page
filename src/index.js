@@ -165,6 +165,7 @@ content.appendChild(credits());
 
 document.getElementById('logo').addEventListener('click', function(){
     const content = document.getElementById('content');
+    content.innerHTML = '';
     content.appendChild(carousel());
     content.appendChild(component1());
     content.appendChild(component2());
@@ -176,6 +177,7 @@ document.getElementById('locLink').addEventListener('click', function(){
     const content = document.getElementById('content');
     content.innerHTML = '';
     content.appendChild(locations());
+    content.appendChild(carousel())
     content.appendChild(footer());
     content.appendChild(credits());
     

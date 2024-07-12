@@ -1,5 +1,5 @@
 #loc{
-    padding: 10px 200px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     gap:30px;   
@@ -14,8 +14,81 @@ p{
     display: flex;
     flex-direction: column;
     gap:10px;
+    width: 400px;
+    font-family: 'regular';
 }
 
-#address:nth-child(1){
+#lcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#lheader{
+    font-family: 'cursive';
+    font-size: 40px;
+}
+
+#address{
     color: #937127;
+}
+
+#brunch>p:nth-of-type(1){
+    font-weight: 600;
+}
+#dinner>p:nth-of-type(1){
+    font-weight: 600;
+}
+#hapyhour>p:nth-of-type(1){
+    font-weight: 600;
+}
+#rright{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+#rheader{
+    font-family: 'cursive';
+    font-size: 40px;
+}
+
+#rcontent{
+    font-family: 'regular';
+    font-size: 18px;
+    text-align: center;
+    color: #4D4C4E;
+    
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#sociallinks{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#order>button{
+    font-family: 'regular';
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#order>button:hover{
+    background: red;
 }
